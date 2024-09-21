@@ -32,9 +32,9 @@ document
         document.getElementById("status").textContent =
           "File uploaded successfully!";
 
-        // Update the file list on the UI
-        const fileList = response.data.files;
-        updateFileList(fileList);
+        // // Update the file list on the UI
+        // const fileList = response.data.files;
+        // updateFileList(fileList);
       } else {
         document.getElementById("status").style.color = "red";
         document.getElementById("status").textContent = "File upload failed!";
