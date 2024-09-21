@@ -18,7 +18,7 @@ document
 
     try {
       const response = await axios.post(
-        "http://52.233.22.115/upload",
+        "http://52.233.22.115:80/upload",
         formData,
         {
           headers: {
