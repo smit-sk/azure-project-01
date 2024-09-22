@@ -16,6 +16,8 @@ document
     formData.append("projectName", projectName);
     formData.append("file", file);
 
+    console.log("NO CORS CODE UPDATED");
+
     try {
       const response = await axios.post(
         "http://52.228.45.138:80/upload",
