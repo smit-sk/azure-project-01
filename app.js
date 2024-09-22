@@ -21,9 +21,10 @@ document
         "http://52.228.45.138:80/upload",
         formData,
         {
-          mode: "no-cors",
+          // mode: "no-cors",
           headers: {
             "Content-Type": "multipart/form-data",
+            "Access-Allow-Origin": "*",
           },
         }
       );
