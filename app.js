@@ -16,7 +16,7 @@ document
     formData.append("projectName", projectName);
     formData.append("file", file);
 
-    console.log("NO CORS CODE UPDATED");
+    console.log("NO CORS CODE UPDATED 1");
 
     try {
       const response = await axios.post(
@@ -26,12 +26,11 @@ document
           mode: "no-cors",
           headers: {
             "Content-Type": "multipart/form-data",
-            "Access-Allow-Origin": "*",
           },
         }
       );
 
-      console.log("NO CORS CODE UPDATED");
+      console.log("NO CORS CODE UPDATED 2");
 
       if (response.status === 200) {
         console.log("block of code 200");
