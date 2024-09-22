@@ -28,8 +28,9 @@ document
       );
 
       if (response.status === 200) {
+        console.log("block of code 200");
         const fileUrl = response.data.file_url;
-
+        console.log("fileurl=" + fileUrl);
         document.getElementById("status").style.color = "green";
         document.getElementById("status").textContent =
           "File uploaded successfully!";
@@ -46,6 +47,8 @@ document
         document.getElementById("status").textContent = "File upload failed!";
       }
     } catch (error) {
+      console.log("block of error :  " + error);
+
       document.getElementById("status").style.color = "red";
       document.getElementById("status").textContent = "Error: " + error.message;
     }
