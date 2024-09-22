@@ -21,11 +21,10 @@
       <button type="submit">Upload</button>
     </form>
     <div id="status"></div>
-    <!-- New Section to display list of uploaded files -->
-    <!-- <div id="uploadedFilesContainer">
-        <h2>Uploaded Files</h2>
-        <ul id="uploadedFilesList"></ul>
-    </div> -->
+    <div id="uploadedImageContainer" style="display: none;">
+        <h2>Uploaded Image</h2>
+        <img id="uploadedImage" src="" alt="Uploaded Image" style="max-width: 100%; height: auto;" />
+      </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
