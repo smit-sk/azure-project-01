@@ -21,7 +21,7 @@ document
         "http://52.228.45.138:80/upload",
         formData,
         {
-          // mode: "no-cors",
+          mode: "no-cors",
           headers: {
             "Content-Type": "multipart/form-data",
             "Access-Allow-Origin": "*",
@@ -29,8 +29,11 @@ document
         }
       );
 
+      console.log("NO CORS CODE UPDATED");
+
       if (response.status === 200) {
         console.log("block of code 200");
+
         const fileUrl = response.data.file_url;
         console.log("fileurl=" + fileUrl);
         document.getElementById("status").style.color = "green";
